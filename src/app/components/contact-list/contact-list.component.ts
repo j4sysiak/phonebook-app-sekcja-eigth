@@ -22,6 +22,7 @@ export class ContactListComponent implements OnInit {
     }
     );
 
+    
     $(window).scroll(() => {
       let w = $(window);
       let d = $(document);
