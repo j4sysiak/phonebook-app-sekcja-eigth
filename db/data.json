@@ -1,58 +1,6 @@
 {
   "contacts": [
     {
-      "id": 11,
-      "firstname": "Mitchael",
-      "lastname": "Tinniswood",
-      "email": "mtinniswooda@typepad.com",
-      "phone": "2135331512",
-      "gender": "Male",
-      "dob": "1996-08-19",
-      "city": "North Hollywood",
-      "state": "California",
-      "country": "United States",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/men/11.jpg"
-    },
-    {
-      "id": 12,
-      "firstname": "Wilden",
-      "lastname": "Broad",
-      "email": "wbroadb@vkontakte.ru",
-      "phone": "2812428607",
-      "gender": "Male",
-      "dob": "1993-10-11",
-      "city": "Houston",
-      "state": "Texas",
-      "country": "United States",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/men/12.jpg"
-    },
-    {
-      "id": 13,
-      "firstname": "Trescha",
-      "lastname": "Ianelli",
-      "email": "tianellic@icq.com",
-      "phone": "5124532433",
-      "gender": "Female",
-      "dob": "1975-05-09",
-      "city": "Austin",
-      "state": "Texas",
-      "country": "United States",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/women/13.jpg"
-    },
-    {
-      "id": 14,
-      "firstname": "Valentin",
-      "lastname": "Stockford",
-      "email": "vstockfordd@sbwire.com",
-      "phone": "9409490604",
-      "gender": "Male",
-      "dob": "1974-10-25",
-      "city": "Wichita Falls",
-      "state": "Texas",
-      "country": "United States",
-      "picture": "http://kvinod.com/old_ci/randomdata/images/men/14.jpg"
-    },
-    {
       "id": 15,
       "firstname": "Cindy",
       "lastname": "Carletti",
