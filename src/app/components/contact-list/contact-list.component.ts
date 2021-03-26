@@ -22,7 +22,7 @@ export class ContactListComponent implements OnInit {
     }
     );
 
-    
+
     $(window).scroll(() => {
       let w = $(window);
       let d = $(document);
@@ -35,7 +35,9 @@ export class ContactListComponent implements OnInit {
 
   loadMore() {
     this.pageNum++;
-    this.service.getAllContacts(this.pageNum).subscribe(data => this.contacts = [...this.contacts, ...data]);
+    this.service.getAllContacts(this.pageNum).subscribe(
+      data => this.contacts = [...this.contacts, ...data]
+    );
   }
 
 }
