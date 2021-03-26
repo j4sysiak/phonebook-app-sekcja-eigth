@@ -24,7 +24,6 @@
     <div class="col-sm-8">{{contact.phone}}</div>
 </div>
 
-
 <div class="row">
     <div class="col-sm-4">City</div>
     <div class="col-sm-8">{{ contact.city | uppercase }}</div>
@@ -38,10 +37,8 @@
     <div class="col-sm-8">{{contact.country}}</div>
 </div>
 
-
 <button class="btn btn-primary" [routerLink]="['/edit-contact', contact.id]">Edit</button>
 <button class="btn btn-danger" (click)="deleteContact()">Delete</button>
-
 
 <p>
   <button class="btn btn-default" (click)="testSwal()">Test Sweet alert</button>

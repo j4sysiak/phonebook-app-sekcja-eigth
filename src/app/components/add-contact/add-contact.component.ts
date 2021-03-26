@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class AddContactComponent implements OnInit {
 
   contact: Contact;
-
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
   constructor(private service: PhonebookService,
               private router: Router) { }
 
