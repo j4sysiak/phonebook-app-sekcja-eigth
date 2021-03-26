@@ -4,6 +4,7 @@ import { PhonebookService } from 'src/app/service/phonebook.service';
 import { Router } from '@angular/router';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'pb-add-contact',
   templateUrl: './add-contact.component.html',
   styleUrls: ['./add-contact.component.css']
@@ -12,8 +13,10 @@ export class AddContactComponent implements OnInit {
 
   contact: Contact;
 
+
+
   constructor(private service: PhonebookService,
-    private router: Router) { }
+              private router: Router) { }
 
   ngOnInit(): void {
     this.contact = new Contact();
