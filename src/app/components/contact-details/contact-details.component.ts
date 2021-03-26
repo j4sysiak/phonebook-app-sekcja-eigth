@@ -42,6 +42,7 @@ export class ContactDetailsComponent implements OnInit {
     //   return;
     // }
 
+
     swal({
       title: 'You are about to delete this contact',
       text: 'Please confirm',
