@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Contact } from 'src/app/model/contact';
-import { PhonebookService } from 'src/app/service/phonebook.service';
+import {Component, OnInit} from '@angular/core';
+import {Contact} from 'src/app/model/contact';
+import {PhonebookService} from 'src/app/service/phonebook.service';
 
 const $ = window['jQuery'];
 
@@ -11,15 +11,17 @@ const $ = window['jQuery'];
 })
 export class ContactListComponent implements OnInit {
 
-  contacts : Contact[] ;
-  pageNum: number = 1;
-  constructor(private service : PhonebookService) {}
+  contacts: Contact[];
+  pageNum = 1;
+
+  constructor(private service: PhonebookService) {
+  }
 
   ngOnInit(): void {
     this.service.getAllContacts().subscribe(data => {
-      this.contacts = data
-      console.log(this.contacts);
-    }
+        this.contacts = data;
+        console.log(this.contacts);
+      }
     );
 
 
@@ -27,7 +29,7 @@ export class ContactListComponent implements OnInit {
       let w = $(window);
       let d = $(document);
 
-      if(w.height() + w.scrollTop() === d.height()) {
+      if (w.height() + w.scrollTop() === d.height()) {
         this.loadMore();
       }
     });

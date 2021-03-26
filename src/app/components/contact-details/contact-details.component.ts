@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Contact } from '../../model/contact';
-import { PhonebookService } from 'src/app/service/phonebook.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {Contact} from '../../model/contact';
+import {PhonebookService} from 'src/app/service/phonebook.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 const swal = window['swal'];
 
@@ -14,15 +14,16 @@ export class ContactDetailsComponent implements OnInit {
 
   contact: Contact = new Contact();
 
-  constructor(private service : PhonebookService,
+  constructor(private service: PhonebookService,
               private activatedRoute: ActivatedRoute,
-              private router: Router) { }
+              private router: Router) {
+  }
 
   ngOnInit() {
-    this.activatedRoute.params.subscribe( paramsData => {
-      this.service.getContactDetails(paramsData['id']).subscribe(data => this.contact = data);
-    }
-    )
+    this.activatedRoute.params.subscribe(paramsData => {
+        this.service.getContactDetails(paramsData['id']).subscribe(data => this.contact = data);
+      }
+    );
   }
 
   testSwal() {
@@ -31,9 +32,9 @@ export class ContactDetailsComponent implements OnInit {
     // swal('Phonbook App', 'Hello Friend', 'warning');
     swal({
       title: 'Phonbook App',
-      icon:  'info',
-      text:  'You are in the contact-detail-page'
-    })
+      icon: 'info',
+      text: 'You are in the contact-detail-page'
+    });
   }
 
   deleteContact() {
@@ -41,6 +42,7 @@ export class ContactDetailsComponent implements OnInit {
     // if(!confirm('Are you sure?')) {
     //   return;
     // }
+
 
     swal({
       title: 'You are about to delete this contact',
@@ -59,12 +61,12 @@ export class ContactDetailsComponent implements OnInit {
         }
       ]
     }).then(result => {
-      if (result===true){
+      if (result === true) {
         this.service.deleteContact(this.contact.id).subscribe(() => {
           this.router.navigate(['/contact-list']);
         });
       }
-    })
+    });
 
 
   }

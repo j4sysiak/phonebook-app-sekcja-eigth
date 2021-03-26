@@ -67,7 +67,9 @@
     <input class="form-control" formControlName="picture">
   </div>
 
-  <button class="btn btn-{{ contactForm.valid ? 'primary' : 'danger' }}" [disabled]="contactForm.invalid" (click)="saveChanges()">Save
-    changes</button>
+  <button class="btn btn-{{ contactForm.valid ? 'primary' : 'danger' }}" [disabled]="contactForm.invalid"
+          (click)="saveChanges()">
+    Save changes
+  </button>
 
 </form>
